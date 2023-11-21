@@ -12,9 +12,12 @@ import { createAction, props,Action } from "@ngrx/store";
     )
 
 */
+export const INCREMENT = '[Counter] Increment';
 export class IncrementAction implements Action{
-    readonly type = '[Counter] Increment';
+    readonly type = INCREMENT;
     constructor(public value : number){
 
     }
 }
+
+export type CounterActions = IncrementAction ;
