@@ -16,7 +16,7 @@ export class CounterOutputComponent  {
 
   constructor(private store : Store<{counter:number}>) {
     this.counter$ = store.select(selectCount)
-    this.doubleCounter$ = store.select(selectDouble)
+    this.doubleCounter$ = store.select(selectDouble);
   }
 
 }
